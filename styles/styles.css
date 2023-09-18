@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color-main: #ffc50b;
+    --primary-color-light: #f7da7b;
+    --primary-color-dark: #e99c03;
+    --secondary-color-main: #00208a;
+    --secondary-color-light: #0e34af;
+    --secondary-color-dark: #031654;
+    --text-color-main: #282727;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Comentario Teste */
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--primary-color-main);
+    color: var(-text-color-main);
+    font-family: 'Roboto';
+    flex-direction: column;
+}
+
+.header {
+background-color: var(--primary-color-light);
+padding: 16px 5%;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.items {
+    color: var(--secondary-color-main);
+    border: 2px;
+    border-color: var(--text-color-main);
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-decoration: none;
+    border-radius: 4px;
+    }
+
+.items:hover {
+    color: var(--secondary-color-dark);
+    border: 2px;
+    border-color: var(--text-color-main);
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.content {
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.header-1 {
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 115%;
+    color: var(--text-color-main);
+}
+
+.header-2 {
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 115%;
+    color: var(--secondary-color-main);
+}
+
+.header-3 {
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 115%;
+    color: var(--secondary-color-main);
+}
+
+.distak-title {
+    color: var(--secondary-color-main);
+}
+.main-text {
+    color: var(--text-color-main);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+}
+
+.subtitle-1 {
+    color: var(--text-color-main);
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.subtitle-2 {
+    color: var(--secondary-color-main);
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.card-experience {
+    display: grid;
+    padding: 24px;
+    background-color: white;
+    border-radius: 8px;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.card-header {
+    display: grid;
+    gap: 4px;
+}
+
+.texto-corrido {
+    color: var(--text-color-main);
+    font-size: 1 rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+
+}
+.social {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.social-button {
+    background-color: var(--secondary-color-main);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    &:hover {
+        background-color: var(--secondary-color-dark);
+        transition: all 100ms ease-out;
+    }  
+
+}
+.presentation {
+    height: 100vh;
+    max-width: 1440px;
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.footer {
+    background-color: var(--text-color-main);
+    display: flex;
+    justify-content: center;
+    padding: 24px 5%;
+}
+
+.image-box {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.image {
+    width: 500px;
+    height: auto;
+}
+
+.footer-text {
+    color: white;
+
+}
+
+@media (max-width: 1200px) {
+    body {
+        .presentation {
+            flex-direction: column-reverse;
+        }
+    }
+}
